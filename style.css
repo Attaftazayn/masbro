@@ -1,0 +1,139 @@
+html {
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0e141f;
+}
+
+.papan-skor {
+  background-color: #171F2F;
+  font-size: 40px;
+  padding: 6px;
+  padding-top: 8px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Castoro Titling';
+  margin-bottom: 0px;
+}
+
+.judul1 {
+  font-size: 23px;
+  text-align: center;
+  margin: 10px;
+  padding-top: 7.5%;
+  font-family: 'Vast Shadow';
+  color: #15c2b9;
+}
+
+.judul2 {
+  font-size: 23px;
+  text-align: center;
+  margin: 10px;
+  padding-top: 7.5%;
+  font-family: 'Vast Shadow';
+  color: #B28767;
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Poppins';
+  color: #fff;
+}
+
+.kaki {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+
+.chat {
+  color: #fff;
+  font-family: 'Cabin';
+}
+
+.aku {
+  color: #15c2b9;
+  font-family: 'Poppins';
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.anda {
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 15px;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 7.5px 15px;
+  margin-top: 5%;
+  background-color: #15c2b9;
+  font-family: 'Poppins';
+  transition: background-color 1.2s ease-in-out;
+  transition: all 1.2s ease;
+  margin-top: 10%;
+}
+
+button:hover {
+  background-color: #B28767;
+  transform: scale(0.87)
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  cursor: url(palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(palu2.png), auto;
+}
+
+.tanah {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.tanah::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(tanah.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -36px;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(gambar_masbro.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.25s;
+}
+
+.tanah.muncul .tikus {
+  top: 4.4px;
+}
