@@ -144,6 +144,7 @@ button:hover {
   margin: auto;
   display: grid;
   place-items: center;
+  font-family: 'Poppins';
 }
 .wrapper{
   display: inline-flex;
