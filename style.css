@@ -158,8 +158,8 @@ button:hover {
 }
 .wrapper .option{
   background: #0e141f;
-  height: 33%;
-  width: 20%;
+  height: 35%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
