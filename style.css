@@ -12,12 +12,12 @@ body {
   background-color: #171F2F;
   font-size: 40px;
   padding: 6px;
-  padding-top: 8px;
   border-radius: 10px;
   text-align: center;
   color: #fff;
   font-family: 'Castoro Titling';
   margin-bottom: 0px;
+  color: #15c2b9;
 }
 
 .judul1 {
@@ -78,7 +78,7 @@ button {
   border-radius: 5px;
   font-size: 14px;
   padding: 7.5px 15px;
-  margin-top: 5%;
+  margin-top: 1%;
   background-color: #15c2b9;
   font-family: 'Poppins';
   transition: background-color 1.2s ease-in-out;
@@ -136,4 +136,81 @@ button:hover {
 
 .tanah.muncul .tikus {
   top: 4.4px;
+}
+
+
+
+.container1 {
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+.wrapper{
+  display: inline-flex;
+  height: 100px;
+  width: 380px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #0e141f;
+  height: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid #B28767;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #B28767;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #15c2b9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #15c2b9;
+  background: #15c2b9;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #B28767;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
 }
