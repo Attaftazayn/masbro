@@ -176,7 +176,6 @@ button:hover {
   background: #B28767;
   border-radius: 50%;
   position: relative;
-  margin-right: 5px;
 }
 .wrapper .option .dot::before{
   position: absolute;
