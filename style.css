@@ -158,8 +158,8 @@ button:hover {
 }
 .wrapper .option{
   background: #0e141f;
-  height: 30%;
-  width: 30%;
+  height: 33%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -176,6 +176,7 @@ button:hover {
   background: #B28767;
   border-radius: 50%;
   position: relative;
+  margin-right: 5px;
 }
 .wrapper .option .dot::before{
   position: absolute;
